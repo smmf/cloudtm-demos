@@ -37,19 +37,23 @@ public class MainApp {
 
     @Atomic
     public static void initDomain() {
+        logger.info("Populate domain");
         DomainRoot domainRoot = FenixFramework.getDomainRoot();
 
         // Authors
+        logger.debug("Populate " + AUTH_COUNT + " authors");
         for (int i = 0; i < AUTH_COUNT; i++) {
             domainRoot.addTheAuthors(new Author("Auth" + i));
         }
 
         // Publishers
+        logger.debug("Populate " + PUB_COUNT + " publishers");
         for (int i = 0; i < PUB_COUNT; i++) {
             domainRoot.addThePublishers(new Publisher("Pub" + i));
         }
 
         // Books
+        logger.debug("Populate " + BOOK_COUNT + " books");
         for (int i = 0; i < BOOK_COUNT; i++) {
             Book book = null;
 
@@ -67,6 +71,7 @@ public class MainApp {
 
             domainRoot.addTheBooks(book);
         }
+        logger.info("Populate domain finished");
     }
 
     @Atomic

@@ -7,7 +7,7 @@
     <artifactId>demo</artifactId>
     <packaging>jar</packaging>
 
-    <name>demo</name>
+    <name>Scenario 2</name>
 
     <properties>
         <!-- <fenixframework.code.generator>pt.ist.fenixframework.backend.mem.MemCodeGenerator</fenixframework.code.generator> -->
@@ -138,15 +138,15 @@
 
     <repositories>
       <repository>
-        <id>fenix-framework-cloudtm-repository</id>
-        <url>https://fenix-ashes.ist.utl.pt/nexus/content/repositories/fenix-framework-cloudtm-repository</url>
+        <id>cloudtm-repository</id>
+        <url>http://cloudtm.ist.utl.pt:8083/nexus/content/groups/public/</url>
       </repository>
     </repositories>
 
     <pluginRepositories>
       <pluginRepository>
-        <id>fenix-framework-cloudtm-repository</id>
-        <url>https://fenix-ashes.ist.utl.pt/nexus/content/repositories/fenix-framework-cloudtm-repository</url>
+        <id>cloudtm-repository</id>
+        <url>http://cloudtm.ist.utl.pt:8083/nexus/content/groups/public/</url>
       </pluginRepository>
     </pluginRepositories>
 
