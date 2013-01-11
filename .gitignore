@@ -1,3 +1,11 @@
 target/
 *.log
 *.class
+#### idea files###
+.idea
+*.iml
+### JTA folders
+ObjectStore/
+PutObjectStoreDirHere
+### remote link to infinispan config
+scenario3/src/main/resources/infinispan.xml
