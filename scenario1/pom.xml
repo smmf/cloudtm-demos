@@ -7,7 +7,7 @@
     <artifactId>demo</artifactId>
     <packaging>jar</packaging>
 
-    <name>demo</name>
+    <name>Scenario 1</name>
 
     <properties>
         <!-- <fenixframework.code.generator>pt.ist.fenixframework.backend.mem.MemCodeGenerator</fenixframework.code.generator> -->
