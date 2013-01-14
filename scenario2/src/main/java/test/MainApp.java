@@ -165,14 +165,4 @@ public class MainApp {
         return null;
     }
 
-    @Atomic
-    public static Publisher getPublisherByName(String publisherName) {
-        DomainRoot domainRoot = FenixFramework.getDomainRoot();
-        for (Publisher publisher : domainRoot.getThePublishers()) {
-            if (publisher.getPublisherName().equals(publisherName)) {
-                return publisher;
-            }
-        }
-        return null;
-    }
 }
